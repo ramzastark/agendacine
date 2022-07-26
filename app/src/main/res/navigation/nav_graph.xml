@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="mx.asgardroid.agendacine.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_agendaMainFragment"
+            app:destination="@id/agendaMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/agendaMainFragment"
+        android:name="mx.asgardroid.agendacine.ui.agenda.AgendaMainFragment"
+        android:label="fragment_agenda_main"
+        tools:layout="@layout/fragment_agenda_main" >
+        <action
+            android:id="@+id/action_agendaMainFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="mx.asgardroid.agendacine.ui.agenda.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" >
+        <action
+            android:id="@+id/action_addContactFragment_to_detailContactFragment"
+            app:destination="@id/detailContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailContactFragment"
+        android:name="mx.asgardroid.agendacine.ui.agenda.DetailContactFragment"
+        android:label="fragment_detail_contact"
+        tools:layout="@layout/fragment_detail_contact" />
+</navigation>
