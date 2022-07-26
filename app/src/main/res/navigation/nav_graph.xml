@@ -16,9 +16,9 @@
     </fragment>
     <fragment
         android:id="@+id/agendaMainFragment"
-        android:name="mx.asgardroid.agendacine.ui.agenda.AgendaMainFragment"
+        android:name="mx.asgardroid.agendacine.ui.agenda.JournalMainFragment"
         android:label="fragment_agenda_main"
-        tools:layout="@layout/fragment_agenda_main" >
+        tools:layout="@layout/fragment_journal_main" >
         <action
             android:id="@+id/action_agendaMainFragment_to_addContactFragment"
             app:destination="@id/addContactFragment" />

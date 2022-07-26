@@ -7,18 +7,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import mx.asgardroid.agendacine.R
-import mx.asgardroid.agendacine.databinding.FragmentAgendaMainBinding
-import mx.asgardroid.agendacine.databinding.FragmentMainBinding
+import mx.asgardroid.agendacine.databinding.FragmentJournalMainBinding
 
-class AgendaMainFragment : Fragment() {
+class JournalMainFragment : Fragment() {
 
-    private lateinit var binding: FragmentAgendaMainBinding
+    private lateinit var binding: FragmentJournalMainBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentAgendaMainBinding.inflate(inflater)
+        binding = FragmentJournalMainBinding.inflate(inflater)
         return binding.root
     }
 
